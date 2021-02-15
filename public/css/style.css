@@ -127,7 +127,6 @@ img {
   top: 0;
   left: 0;
   z-index:var(--z-fix) ;
-  background-color: var(--f-color-lighten);
   box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
 /* === navbar === */
@@ -147,6 +146,7 @@ img {
   display: flex;
   align-items: center;
   background-color:var(--f-color) ;
+  opacity: 0.9;
   transition: .5s;
 
 }
@@ -172,9 +172,92 @@ img {
   color: var(--t-color);
 }
 .n_toggle{
-  color: var(--f-color-dark);
+  color: var(--f-color);
   font-size: 1.3rem;
   cursor: pointer;
 }
+.nav-logo{
+  color: var(--f-color);
+
+}
+
+/* = show menu = */
+.show{
+  left: 0;
+}
+.active{
+  color: var(--t-color);
+}
+
+/*  === home === */
+.H_container{
+  height:calc(100vh - var(--head-height)) ;
+  align-items: center;
+}
+.H_data{
+display:flex ;
+flex-direction: column;
+align-items: center;
+height: max-content;
+text-align: center;
+}
+.H_img{
+  width: 160px;
+  height: 160px;
+  background-color: var(--f-color);
+  border-radius:50% ;
+  overflow: hidden;
+  margin-bottom: var(--mb-2);
+}
+.H_img img{
+  width: 160px;
+}
+.H_title{
+  font-size: var(--h1-f-size);
+  color: var(--f-color);
+  font-weight: var(--f-s-bold);
+}
+.H_Pro{
+  font-size: var(--small-f-size);
+  color: var(--f-color-light);
+  margin-bottom: var(--mb-5);
+}
+
+.H_social{
+  margin-bottom: 5rem;
+}
+.H_Social-Link{
+  display: inline-flex;
+  background-color: var(--f-color);
+  color: var(--f-color-lighten);
+  font-size: 1.2rem;
+  border-radius: 50%;
+  padding: .40rem;
+  margin: 0 var(--mb-1);
+  transition: .3s;
+}
+.H_Social-Link:hover{
+  background-color: var(--f-color-dark);
+  transform: scale(1.1);
+}
+
+.button{
+  display: inline-block;
+  background-color:var(--f-color) ;
+  color: var(--f-color-lighten);
+  font-weight: var(--f-s-bold);
+  padding: .70rem 1.2rem ;
+  border-radius: .5rem;
+  transition: .3s;
+}
+.button:hover{
+  background-color: var(--f-color-dark);
+  transform: scale(1.05);
+}
+
+
+
+
+
 
 
