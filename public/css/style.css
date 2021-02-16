@@ -305,8 +305,60 @@ text-align: center;
   font-size:var(--small-f-size) ;
 }
 
+/* skills section  */
+.skills_container{
+  row-gap: 2rem;
 
+}
+.skills_subtitle{
+  font-size: var(--h3-f-size);
+  color: var(--f-color-dark);
+  margin-bottom: var(--mb-2);
+}
+.skills_data{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 var(--mb-2);
+  margin-bottom: var(--mb-4);
+}
+.skills_name{
+  text-transform: uppercase;
+}
+.skills_bar{
+  position: absolute;
+  height: .25rem;
+  bottom: -.76rem;
+  background-color: var(--f-color);
+}
+.skills_html{
+  width: 87%;
+}
+.skills_bs{
+  width: 78%;
+}
+.skills_js{
+  width: 72%;
+}
+.skills_react{
+  width: 67%;
+}
+/* backend skills  */
+.skills_bjs{
+  width: 87%;
+}
+.skills_node{
+  width: 67%;
+}
+.skills_mongodb{
+  width: 80%;
+}
+.skills_python{
+  width: 67%;
+}
 
+.skills_number{
+  color: var(--f-color-light);
+}
 
-
-
+/* section education */
