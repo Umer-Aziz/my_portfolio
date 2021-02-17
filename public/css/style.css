@@ -362,3 +362,161 @@ text-align: center;
 }
 
 /* section education */
+.read_more{
+color: var(--f-color);
+  }
+.education_uni:hover{
+  cursor: pointer;
+  color: var(--f-color);
+}
+
+.education_container{
+  row-gap: 2rem;
+}
+.education_content{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+}
+
+.edcation_year, .education_race{
+  font-size: var(--h3-f-size);
+  margin-bottom: .25rem;
+}
+
+.education_uni ,.education_speciality{
+  display: block;
+  font-size: var(--smaller-f-size);
+}
+.education_year , .education_uni {
+  text-align: right;
+}
+.education_time{
+  padding: 0 1rem;
+  justify-self: center;
+}
+
+.education_rounder{
+  position:relative ;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color:var(--f-color) ;
+  border-radius: 50%;
+}
+.education_rounder::before{
+  content: "";
+  position: absolute;
+  transform: translate(-4px ,-4px);
+  width: 21px;
+  height: 21px;
+  border: 1px solid var(--f-color);
+  border-radius: 50%;
+}
+
+.education_line{
+  display: block;
+  height: 90%;
+  width: 2px;
+  background-color: var(--f-color);
+  transform: translate(5px, -4px);
+}
+
+/* services section  */
+
+.services_container{
+  row-gap: 2rem;
+}
+
+.services_content{
+  padding: 1.5rem .5rem;
+  border: 2px solid  var(--f-color);
+  border-radius: .5rem;
+  text-align: center;
+}
+.services_icon{
+  font-size: 2rem;
+  padding: .5rem;
+  background-color:var(--f-color);
+  color: var(--f-color-lighten);
+  border-radius: 50%;
+  margin-bottom: var(--mb-2);
+}
+
+.services_title{
+  font-size: 1.25rem;
+  color: var(--f-color-dark);
+  margin-bottom: var(--mb-1);
+
+}
+.services_content ,.services_icon ,.services_description , .services_title{
+  transition: .5s;
+}
+.services_content:hover{
+background-color: var(--f-color);
+}
+
+.services_content:hover .services_icon{
+  background-color: var(--f-color-lighten);
+  color:var(--f-color) ;
+}
+.services_content:hover .services_title{
+  color: var(--f-color-lighten);
+}
+
+.services_content:hover .services_description{
+  color: var(--f-color-lighten);
+}
+.project{
+  background-color: var(--f-color);
+  padding-bottom: 0;
+}
+.project_container{
+  row-gap: 2rem;
+}
+.project_data{
+  text-align: center;
+}
+
+.project_title{
+color:var(--f-color-lighten) ;
+}
+
+.project_description{
+  margin-bottom: var(--mb-4);
+}
+.project_img{
+  width: 220px;
+  /* filter: invert(1); */
+  justify-self: center;
+}
+.contect-btn{
+  background-color:var(--f-color-lighten);
+  color: var(--f-color);
+  display: inline-block;
+  font-weight: var(--f-s-bold);
+  padding: .70rem 1.2rem ;
+  border-radius: .5rem;
+  transition: .3s;
+
+}
+.contect-btn:hover{
+  background-color: var(--f-color-light);
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
