@@ -11,29 +11,7 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav class="nav bg-grid">
-      <div class="n_toggle" id="n-toggle">
-        <i class='bx bx-menu'></i>
-      </div>
-      <div>
-        <a href="/" class="nav-logo">umeraziz</a>
-      </div>
-      <div class="n_menu" id="n-menu">
-        <div class="n_close" id="n-close">
-          <i class="bx bx-x"></i>
-        </div>
-        <ul class="n_list">
-          <li class="n_item"><a href="#home" class="n_link">Home</a></li>
-          <li class="n_item"><a href="#about" class="n_link">About</a></li>
-          <li class="n_item"><a href="#skills" class="n_link">Skills</a></li>
-          <li class="n_item"><a href="#services" class="n_link">Services</a></li>
-          <li class="n_item"><a href="#works" class="n_link">Works</a></li>
-          <li class="n_item"><a href="#contact" class="n_link">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  {{>navbar}}
 
   <main class="main">
 
@@ -58,271 +36,118 @@
     </section>
 
     {{!-- section about --}}
-    <section class="about section" id="about">
-      <span class="section-subtitle">My intro</span>
-      <h2 class="section-title">About Me</h2>
-      <div class="about_container bg-grid">
-        <div class="about_data">
-          <p class="about_description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit error sed, ullam cupiditate ex nihil doloribus
-            sint nobis accusantium laborum, nesciunt expedita voluptas quibusdam similique veritatis quae, iusto atque
-            debitis.
-          </p>
-          <img src="img/1.jpg" alt="About pic" class="about_img">
-        </div>
+   {{>about}}
 
-        <div>
-          <div class="about_info">
-            <h3 class="about_info_title">
-              Information
-            </h3>
+  {{!-- section skills  --}}
 
-            <div class="about_info-data">
-              <i class="bx bx-user info_icon"></i>
-              <span>Umer Aziz</span>
-            </div>
-
-            <div class="about_info-data">
-              <i class="bx bx-phone info_icon"></i>
-              <span>+923089752092</span>
-            </div>
-
-            <div class="about_info-data">
-              <i class="bx bx-envelope info_icon"></i>
-              <span>umeraziz682@gmail.com</span>
-            </div>
-          </div>
-          <div class="about_info">
-            <h3 class="about_info_title">
-              Experience and support
-            </h3>
-
-            <div class="about_info-data">
-              <i class="bx bx-medal info_icon"></i>
-              <div>
-                <span class="about_info_subtitle">1 year Freelancer</span>
-                <span class="about_info_subtitle_small">Experience</span>
-              </div>
-            </div>
-
-            <div class="about_info-data">
-              <i class="bx bx-briefcase info_icon"></i>
-              <div>
-                <span class="about_info_subtitle">20+ Projects</span>
-                <span class="about_info_subtitle_small">Completed</span>
-              </div>
-            </div>
-
-            <div class="about_info-data">
-              <i class="bx bx-support info_icon"></i>
-              <div>
-                <span class="about_info_subtitle">Support</span>
-                <span class="about_info_subtitle_small">Online 24/7</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills section" id="skills">
-      <span class="section-subtitle">Why Choose Me</span>
-      <h2 class="section-title">My Expertise Area</h2>
-
-      <div class="skills_container bg-grid">
-        <div class="skills_content">
-          <h3 class="skills_subtitle">Frontend</h3>
-
-          <div class="skills_data">
-            <span class="skills_name">Html / css</span>
-            <span class="skills_number"><i class='bx bxs-star'></i><i class='bx bxs-star'></i></i><i
-                class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i></span>
-            <span class="skills_bar skills_html"></span>
-          </div>
-
-          <div class="skills_data">
-            <span class="skills_name">Bs / tailwind css</span>
-            <span class="skills_number"><i class='bx bxs-star'></i><i class='bx bxs-star'></i></i><i
-                class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></span>
-            <span class="skills_bar skills_bs"></span>
-          </div>
-
-          <div class="skills_data">
-            <span class="skills_name">JavaScript</span>
-            <span class="skills_number"><i class='bx bxs-star'></i><i class='bx bxs-star'></i></i><i
-                class='bx bxs-star'></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i></span>
-            <span class="skills_bar skills_js"></span>
-          </div>
-
-          <div class="skills_data">
-            <span class="skills_name">React</span>
-            <span class="skills_number"><i class='bx bxs-star'></i><i class='bx bxs-star'></i></i><i
-                class='bx bxs-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i></span>
-            <span class="skills_bar skills_react"></span>
-          </div>
-
-        </div>
-
-        <div class="skills_content">
-          <h3 class="skills_subtitle">Backend</h3>
-
-          <div class="skills_data">
-            <span class="skills_name">JavaScript</span>
-            <span class="skills_number"><i class='bx bxs-star'></i><i class='bx bxs-star'></i></i><i
-                class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i></span>
-            <span class="skills_bar skills_bjs"></span>
-          </div>
-
-          <div class="skills_data">
-            <span class="skills_name">Node js</span>
-            <span class="skills_number"><i class='bx bxs-star'></i><i class='bx bxs-star'></i></i><i
-                class='bx bxs-star'></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i></span>
-            <span class="skills_bar skills_node"></span>
-          </div>
-
-          <div class="skills_data">
-            <span class="skills_name">MongoDB</span>
-            <span class="skills_number"><i class='bx bxs-star'></i><i class='bx bxs-star'></i></i><i
-                class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bx-star'></i></span>
-            <span class="skills_bar skills_mongodb"></span>
-          </div>
-
-          <div class="skills_data">
-            <span class="skills_name">Python / Django </span>
-            <span class="skills_number"><i class='bx bxs-star'></i><i class='bx bxs-star'></i></i><i
-                class='bx bxs-star'></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i></span>
-            <span class="skills_bar skills_python"></span>
-          </div>
-
-        </div>
-      </div>
-    </section>
+  {{>skills}}
 
     {{!-- section education --}}
 
-    <section class="education section"></section>
-    <span class="section-subtitle">Qualification</span>
-    <h2 class="section-title">My Education</h2>
-   <div class="education_container bg-grid">
-     <div class="education_content">
-       <div>
-       <h3 class="education_year">2019-2023</h3>
-      <a href="http://must.edu.pk/" target="_blank"><span class="education_uni">Mirpur University of Science and Technology</span></a> 
-     </div>
+    <section class="education section">
+      <span class="section-subtitle">Qualification</span>
+      <h2 class="section-title">My Education</h2>
+      <div class="education_container bg-grid">
+        <div class="education_content">
+          <div>
+            <h3 class="education_year">2019-2023</h3>
+            <a href="http://must.edu.pk/" target="_blank"><span class="education_uni">Mirpur University of Science and
+                Technology</span></a>
+          </div>
 
-     <div class="education_time">
-       <span class="education_rounder"></span>
-       <span class="education_line"></span>
-     </div>
+          <div class="education_time">
+            <span class="education_rounder"></span>
+            <span class="education_line"></span>
+          </div>
 
-<div>
-  <h3 class="education_race">Bs Engineering</h3>
-  <span class="education_speciality">Software Engineering</span>
-</div>
+          <div>
+            <h3 class="education_race">Bs Engineering</h3>
+            <span class="education_speciality">Software Engineering</span>
+          </div>
 
-     </div>
+        </div>
 
-<div class="education_content">
-       <div>
-       <h3 class="education_year">24/01/21</h3>
-    <span class="education_uni">European Open University</span>
-     </div>
+        <div class="education_content">
+          <div>
+            <h3 class="education_year">24/01/21</h3>
+            <span class="education_uni">European Open University</span>
+          </div>
 
-     <div class="education_time">
-       <span class="education_rounder"></span>
-       <span class="education_line"></span>
-     </div>
+          <div class="education_time">
+            <span class="education_rounder"></span>
+            <span class="education_line"></span>
+          </div>
 
-<div>
-  <h3 class="education_race">Diploma</h3>
-  <span class="education_speciality">Software Engineering</span>
-</div>
+          <div>
+            <h3 class="education_race">Diploma</h3>
+            <span class="education_speciality">Software Engineering</span>
+          </div>
 
-     </div>
+        </div>
 
-<div class="education_content">
-       <div>
-       <h3 class="education_year">2020</h3>
-      <span class="education_uni">Harvard University / Edx</span> 
-     </div>
+        <div class="education_content">
+          <div>
+            <h3 class="education_year">2020</h3>
+            <span class="education_uni">Harvard University / Edx</span>
+          </div>
 
-     <div class="education_time">
-       <span class="education_rounder"></span>
-       <span class="education_line"></span>
-     </div>
+          <div class="education_time">
+            <span class="education_rounder"></span>
+            <span class="education_line"></span>
+          </div>
 
-<div>
-  <h3 class="education_race">Development</h3>
-  <span class="education_speciality">CS50's Web Programming with Python and JavaScript
-</span>
-<a class="read_more" href="https://www.linkedin.com/in/umer-aziz-b13b841b2/" target="_blank">Read More</a>
+          <div>
+            <h3 class="education_race">Development</h3>
+            <span class="education_speciality">CS50's Web Programming with Python and JavaScript
+            </span>
+            <a class="read_more" href="https://www.linkedin.com/in/umer-aziz-b13b841b2/" target="_blank">Read More</a>
 
-</div>
+          </div>
 
-     </div>
-   </div>
+        </div>
+      </div>
+    </section>
 
-{{!-- Services  --}}
-<section class="services section" id="services">
-  <span class="section-subtitle">What I Offer</span>
-  <h2 class="section-title">My Services</h2>
- <div class="services_container bg-grid">
+    {{!-- Services --}}
+    {{>services}}
 
-   <div class="services_content">
-     <i class="bx bx-code services_icon"></i>
-     <h3 class="services_title">Web development</h3>
-     <p class="services_description">This service that I offer is of high quality, and above all experience that I have in the labor field for long time</p>
-   </div>
+    {{!-- Project in mind --}}
+    <section class="project section">
+      <div class="project_container bg-grid">
+        <div class="project_data">
+          <h2 class="section-title project_title">Do you have a project in mind </h2>
+          <p class="project_description">If you have a project that you want to carry out, do not hesitate and tell me
+            what it is, and what services I can offer you, contact me directly here. </p>
+          <a href="#contact" class=" contect-btn">Contact Me</a>
+        </div>
 
-   <div class="services_content">
-     <i class="bx bx-pen services_icon"></i>
-     <h3 class="services_title">Logo Design</h3>
-     <p class="services_description">This service that I offer is of high quality, and above all experience that I have in the labor field for long time</p>
-   </div>
+        <img src="img/pro.png" alt="project img" class="project_img">
+        <a id="png" href='https://pngtree.com/so/boy'>boy png from pngtree.com</a>
+      </div>
+    </section>
 
-<div class="services_content">
-     <i class="bx bxl-figma services_icon"></i>
-     <h3 class="services_title">Graphic Design</h3>
-     <p class="services_description">This service that I offer is of high quality, and above all experience that I have in the labor field for long time</p>
-   </div>
+    {{!-- section contact me --}}
 
-   <div class="services_content">
-     <i class="bx bx-brush services_icon"></i>
-     <h3 class="services_title">UI/UX</h3>
-     <p class="services_description">This service that I offer is of high quality, and above all experience that I have in the labor field for long time</p>
-   </div>
 
-   <div class="services_content">
-     <i class="bx bx-server services_icon"></i>
-     <h3 class="services_title">Backend development</h3>
-     <p class="services_description">This service that I offer is of high quality, and above all experience that I have in the labor field for long time</p>
-   </div>
-
-<div class="services_content">
-     <i class="bx bx-mobile services_icon"></i>
-     <h3 class="services_title">Interface Mobile</h3>
-     <p class="services_description">This service that I offer is of high quality, and above all experience that I have in the labor field for long time</p>
-   </div>
-
- </div>
-</section>
-
-{{!-- Project in mind  --}}
-<section class="project section">
-  <div class="project_container bg-grid">
-    <div class="project_data">
-      <h2 class="section-title project_title">Do you have a project in mind </h2>
-   <p class="project_description">If you have a project that you want to carry out, do not hesitate and tell me what it is, and what services I can offer you, contact me directly here. </p>
-   <a href="#contact" class=" contect-btn">Contact Me</a>
-   </div>
-
-   <img src="img/project.png" alt="project img" class="project_img">
-  </div>
-</section>
-
+   {{>contact}}
   </main>
 
+ {{!-- footer  --}}
+
+<footer class="footer">
+  <div class="footer_container bg-grid">
+    <h1 class="footer_title">Umer Aziz</h1>
+    <p class="footer_description">I am Umer Aziz and this is my personal website, consult me here.</p>
+    
+    <div class="footer_S">
+      <a href="#" class="footer_link"><i class="bx bxl-facebook"></i></a>
+      <a href="#" class="footer_link"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="footer_link"><i class="bx bxl-linkedin"></i></a>
+    </div>
+  <p class="footer_copy">&copy; All right reserved by umeraziz -2021</p>
+  </div>
+
+</footer>
 
 
 
