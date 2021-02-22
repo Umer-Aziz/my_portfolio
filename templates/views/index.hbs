@@ -16,143 +16,41 @@
   <main class="main">
 
     {{!-- section home --}}
-    <section class="home" id="home">
-      <div class="H_container bg-grid">
-        <div class="H_data">
-          <div class="H_img">
-            <img src="img/2.jpg" alt="Profile pic">
-          </div>
-          <h1 class="H_title">Umer Aziz</h1>
-          <span class="H_Pro">Full Stck Developer</span>
-          <div class="H_social">
-            <a href="#" class="H_Social-Link"><i class='bx bxl-linkedin'></i></a>
-            <a href="#" class="H_Social-Link"><i class='bx bxl-github'></i></a>
-            <a href="#" class="H_Social-Link"><i class='bx bxl-facebook'></i></a>
-            <a href="#" class="H_Social-Link"><i class='bx bxl-instagram'></i></a>
-          </div>
-          <a download="img/1.jpg" href="#" class="button H_button">Download Resume</a>
-        </div>
-      </div>
-    </section>
-
+{{>home}}
     {{!-- section about --}}
-   {{>about}}
+    {{>about}}
 
-  {{!-- section skills  --}}
+    {{!-- section skills --}}
 
-  {{>skills}}
+    {{>skills}}
 
     {{!-- section education --}}
 
-    <section class="education section">
-      <span class="section-subtitle">Qualification</span>
-      <h2 class="section-title">My Education</h2>
-      <div class="education_container bg-grid">
-        <div class="education_content">
-          <div>
-            <h3 class="education_year">2019-2023</h3>
-            <a href="http://must.edu.pk/" target="_blank"><span class="education_uni">Mirpur University of Science and
-                Technology</span></a>
-          </div>
-
-          <div class="education_time">
-            <span class="education_rounder"></span>
-            <span class="education_line"></span>
-          </div>
-
-          <div>
-            <h3 class="education_race">Bs Engineering</h3>
-            <span class="education_speciality">Software Engineering</span>
-          </div>
-
-        </div>
-
-        <div class="education_content">
-          <div>
-            <h3 class="education_year">24/01/21</h3>
-            <span class="education_uni">European Open University</span>
-          </div>
-
-          <div class="education_time">
-            <span class="education_rounder"></span>
-            <span class="education_line"></span>
-          </div>
-
-          <div>
-            <h3 class="education_race">Diploma</h3>
-            <span class="education_speciality">Software Engineering</span>
-          </div>
-
-        </div>
-
-        <div class="education_content">
-          <div>
-            <h3 class="education_year">2020</h3>
-            <span class="education_uni">Harvard University / Edx</span>
-          </div>
-
-          <div class="education_time">
-            <span class="education_rounder"></span>
-            <span class="education_line"></span>
-          </div>
-
-          <div>
-            <h3 class="education_race">Development</h3>
-            <span class="education_speciality">CS50's Web Programming with Python and JavaScript
-            </span>
-            <a class="read_more" href="https://www.linkedin.com/in/umer-aziz-b13b841b2/" target="_blank">Read More</a>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
+    {{>education}}
 
     {{!-- Services --}}
     {{>services}}
 
     {{!-- Project in mind --}}
-    <section class="project section">
-      <div class="project_container bg-grid">
-        <div class="project_data">
-          <h2 class="section-title project_title">Do you have a project in mind </h2>
-          <p class="project_description">If you have a project that you want to carry out, do not hesitate and tell me
-            what it is, and what services I can offer you, contact me directly here. </p>
-          <a href="#contact" class=" contect-btn">Contact Me</a>
-        </div>
-
-        <img src="img/pro.png" alt="project img" class="project_img">
-        <a id="png" href='https://pngtree.com/so/boy'>boy png from pngtree.com</a>
-      </div>
-    </section>
+    {{>project}}
 
     {{!-- section contact me --}}
 
 
-   {{>contact}}
+    {{>contact}}
   </main>
 
- {{!-- footer  --}}
+  {{!-- footer --}}
 
-<footer class="footer">
-  <div class="footer_container bg-grid">
-    <h1 class="footer_title">Umer Aziz</h1>
-    <p class="footer_description">I am Umer Aziz and this is my personal website, consult me here.</p>
-    
-    <div class="footer_S">
-      <a href="#" class="footer_link"><i class="bx bxl-facebook"></i></a>
-      <a href="#" class="footer_link"><i class="bx bxl-instagram"></i></a>
-      <a href="#" class="footer_link"><i class="bx bxl-linkedin"></i></a>
-    </div>
-  <p class="footer_copy">&copy; All right reserved by umeraziz -2021</p>
-  </div>
-
-</footer>
+ {{>footer}}
 
 
 
 
   <script src="js/main.js"></script>
+
+
+
 </body>
 
 </html>
