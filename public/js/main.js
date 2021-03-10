@@ -12,9 +12,9 @@ function LnikAction() {
   NMenu.classList.remove("show");
 }
 nLink.forEach((e) => e.addEventListener("click", LnikAction));
-const sections = document.querySelectorAll("section[id]");
 function sectionActive() {
   const e = window.pageYOffset;
+  const sections = document.querySelectorAll("#section[id]");
   sections.forEach((n) => {
     const t = n.offsetHeight,
       c = n.offsetTop - 50;
