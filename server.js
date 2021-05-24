@@ -35,10 +35,12 @@ app.set('views',tempPath);
 hbs.registerPartials(partialsPath);
 //routing
  
-
-
 app.get("/",(req,res)=>{
     res.render('index');
+})
+
+app.get("/privacy_policy",(req,res)=>{
+    res.render("privacyVideoDownloader");
 })
 
 app.post("/contact",async(req,res)=>{

@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve":"node server.js",
+    "serve": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "minify":"css-minify -f ./public/css/style.css",
+    "minify": "css-minify -f ./public/css/style.css",
     "dev": "nodemon server.js -e js, hbs "
   },
   "keywords": [],
@@ -15,7 +15,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "hbs": "^4.1.1",
+    "hbs": "^4.1.2",
     "jquery": "^3.5.1",
     "mongoose": "^5.11.16",
     "validator": "^13.5.2"
