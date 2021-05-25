@@ -28,6 +28,14 @@ mongoose.connect(process.env.MONGO_CONNECTION_URL, {
 })
 
 //middleware
+app.use((req, res, next) => {
+  if (req.header('x-forwarded-proto') !== 'https') {
+    res.redirect(`https://${req.header('host')}${req.url}`)
+  } else {
+    next();
+  }
+});
+app.use(express.static('build'));
 app.use(express.urlencoded({extended:false}))
 app.use(express.static(staticPath));
 app.set('view engine','hbs');
