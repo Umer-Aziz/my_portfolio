@@ -51,6 +51,10 @@ app.get("/privacy_policy",(req,res)=>{
     res.render("privacyVideoDownloader");
 })
 
+app.get("/app-ads.txt",(req,res)=>{
+    res.send("google.com, pub-8663994645923565, DIRECT, f08c47fec0942fa0");
+})
+
 app.post("/contact",async(req,res)=>{
     try {
         
